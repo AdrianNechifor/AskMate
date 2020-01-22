@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Baloo&display=swap');
+
+body {
+    background: url(1234.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    color: #000000;
+    line-height: 1;
+    padding: 0;
+}
+
+.buton {
+  background-color: blue;
+  border: solid;
+  border-color: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 40em;
+}
+
+.div-nav{
+    position: relative;
+    width: max-content;
+    height: max-content;
+    padding-left: 37%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.menu-nav{
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    background-color: #237364;
+    border: 1px solid rgba(35, 108, 93, 0.85);
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+
+}
+
+.nav-title{
+    position: relative;
+    color: #c77b2e;
+    font-family: 'Baloo', cursive;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+
+}
+
+#home:hover {
+    font-size: 18px;
+    font-weight: lighter;
+    text-decoration: none;
+    max-width: border-box;
+
+}
+
+#question:hover {
+    font-size: 18px;
+    font-weight: lighter;
+    text-decoration: none;
+    max-width: border-box;
+
+}
+
+#add-q:hover{
+    font-size: 18px;
+    font-weight: lighter;
+    text-decoration: none;
+    max-width: border-box;
+
+}
+
+.team-mates {
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+    font-family: "Audiowide", cursive;
+    color: #c77600;
+    height: fit-content;
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+    justify-content: right;
+    justify-items: flex-end;
+}
+
+.f1-name {
+    animation: rotation-name1 3s 1 forwards,
+                opac 2s infinite forwards;
+    position: absolute;
+    left: -100%;
+    bottom: -100%;
+}
+
+.f2-name {
+    animation: rotation-name2 3s 1 3s forwards,
+                opac 2s infinite forwards;
+    position: absolute;
+    left: -100%;
+    bottom: -100%;
+}
+
+.f3-name {
+    animation: rotation-name3 3s 1 6s forwards,
+                opac 2s infinite forwards;
+    position: absolute;
+    left: -100%;
+    bottom: -100%;
+}
+
+.f4-name {
+    animation: rotation-name4 3s 1 9s forwards,
+               opac 2s infinite forwards;
+    position: absolute;
+    left: -100%;
+    bottom: -100%;
+}
+
+@keyframes opac {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes rotation-name1 {
+    from {
+        position: absolute;
+        font-size: 7px;
+        left:-100%;
+        bottom: -100%;
+        transform: rotate(0deg);
+    }
+
+    to {
+        position: relative;
+        font-size: 20px;
+        left: 0%;
+        transform: rotate(720deg);
+        align-self: center;
+        margin: 5%;
+    }
+
+}
+
+@keyframes rotation-name2 {
+    from {
+        position: absolute;
+        font-size: 7px;
+        left:-100%;
+        bottom: -100%;
+        transform: rotate(860deg);
+    }
+
+    to {
+        position: relative;
+        font-size: 20px;
+        left: 0%;
+        transform: rotate(0deg);
+        margin: 5%;
+    }
+
+}
+
+@keyframes rotation-name3 {
+    from {
+        position: absolute;
+        font-size: 7px;
+        left:-100%;
+        bottom: -100%;
+        transform: rotate(0deg);
+    }
+
+    to {
+        position: relative;
+        font-size: 20px;
+        left: 0%;
+        transform: rotate(1080deg);
+        margin: 5%;
+    }
+
+}
+
+@keyframes rotation-name4 {
+    from {
+        position: absolute;
+        font-size: 7px;
+        left:-100%;
+        bottom:-100%;
+        transform: rotate(860deg);
+    }
+
+    to {
+        position: relative;
+        font-size: 20px;
+        left: 0%;
+        transform: rotate(0deg);
+        margin: 5%;
+    }
+
+}
+
+span {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.add-div{
+    margin-left: 5%;
+    margin-top: 5%;
+    position: relative;
+    display: flex;
+    width: content-box;
+    text-align: center;
+    font-family: 'Baloo', cursive;
+    font-weight: lighter;
+    color: #C77600;
+    font-size: 25px;
+}
+
+
+.add-button {
+    width: content-box;
+    height: content-box;
+    position: relative;
+    color: rgb(44, 44, 44);
+    background-color: #C77600;
+    border: 1px solid #C77600;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 3%;
+    font-family: 'Baloo', cursive;
+    font-weight: lighter;
+}
+
+.text-area {
+    background-color: #ffb366;
+}

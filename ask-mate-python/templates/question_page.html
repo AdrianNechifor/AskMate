@@ -1,0 +1,21 @@
+ 
+{% extends "layout.html" %}
+
+{% block title %} Question {{ question[0] }} {% endblock %}
+
+{% block body %}
+<h1> {{ question[0]}}: {{ question[4] }}<a href="/question_list/{{ question_id }}/edit" class="buton">Edit</a></h1>
+    <p style="font-size:160%;" > {{question [5]}} </p>
+
+<hr>
+
+<ol>{% for i in answer %}
+
+        <li><p style="font-size:160%;" > {{ i[4] }} </p></li>
+
+    {% endfor %}
+</ol>
+
+
+{% endblock %}
+

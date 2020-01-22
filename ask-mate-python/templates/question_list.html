@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %} Question List {% endblock %}
+
+{% block body %}
+    <table border="3">
+        <tr>
+            <th style="text-align: center">ID</th>
+            <th style="text-align: center">Submision Time</th>
+            <th style="text-align: center">View Nubmer</th>
+            <th style="text-align: center">Vote Number</th>
+            <th style="text-align: center">Title</th>
+            <th style="text-align: center">Message</th>
+        </tr>
+        {% for i in question_data %}
+            <tr>
+                {% for j in range(i|length) %}
+                    {% if j == 4 %}
+                        <td style="text-align: center"> <a href="/question_list/{{i[0]}}">{{ i[j] }}</a> </td>
+                    {% else %}
+                        <td style="text-align: center"> {{ i[j] }} </td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
